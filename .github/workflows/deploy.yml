@@ -41,6 +41,7 @@ jobs:
       - name: Build
         env:
           PORT: 5173
+          BASE_PATH: '/Aeyvis-Banking-Dashboard/'
         run: cd artifacts/aeyvis-bank && pnpm run build
         
       - name: Setup Pages
