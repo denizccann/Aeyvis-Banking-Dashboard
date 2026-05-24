@@ -39,6 +39,8 @@ jobs:
         run: pnpm install --ignore-scripts
         
       - name: Build
+        env:
+          PORT: 5173
         run: cd artifacts/aeyvis-bank && pnpm run build
         
       - name: Setup Pages
